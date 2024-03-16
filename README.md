@@ -1,4 +1,4 @@
-# vue2
+# vue create vue2 (router + vuex + less)
 
 ## Project setup
 ```
