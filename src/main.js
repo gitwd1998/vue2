@@ -18,7 +18,7 @@ getJsapiTicket().then((res) => {
     const nonceStr = Math.random().toString(36)
     const jsapi_ticket = res.data
     const url = window.location.href
-    const str = `jsapi_ticket=${jsapi_ticket}&noncestr=${nonceStr}&timestamp=${timestamp}&url=${encodeURIComponent(url)}`
+    const str = `jsapi_ticket=${jsapi_ticket}&noncestr=${nonceStr}&timestamp=${timestamp}&url=${url}`
     const signature = sha1(str).toString()
     window.wx.config({
       debug: process.env.NODE_ENV === 'development',
